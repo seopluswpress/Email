@@ -84,7 +84,7 @@ def send_gmail(receiver_email: str, username: str):
         <p style="font-size: 14px;">If the button doesn't work, you can copy and paste this link into your browser:</p>
         <p style="color: #555; word-break: break-all;">{login_url}</p>
         <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;"/>
-        <p style="font-size: 12px; color: #999;">© {new java.util.Date().getYear() + 1900} SMBJugaad LMS</p>
+        <p style="font-size: 12px; color: #999;">© 2025 SMBJugaad LMS</p>
       </div>
     """
     
@@ -103,4 +103,5 @@ def send_gmail(receiver_email: str, username: str):
 # However, Render will use its own command.
 if __name__ == "__main__":
     import uvicorn
+
     uvicorn.run(app, host="0.0.0.0", port=8000)
